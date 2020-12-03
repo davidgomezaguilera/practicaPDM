@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/principal">
+
+
+    <fragment
+        android:id="@+id/principal"
+        android:name="com.example.practicafinalpdm.ui.principal.principal"
+        android:label="@string/tituloPrincipal"
+        tools:layout="@layout/principal_fragment"
+        />
+    <!--Declarar nuevo fragment, crear el nuevo package, crear el nuevo fragment con el view model, adapadtarlo y declararlo aqui con el layout creado por el fragment, los strings de la app y el nombre del package y por ultimo ponerlo en el main activity drawer.-->
+    <fragment
+            android:id="@+id/nav_addArtista"
+            android:name="com.example.practicafinalpdm.addArtista.addArtista"
+            android:label="@string/addArtista"
+            tools:layout="@layout/add_artista_fragment"
+        />
+    <fragment
+        android:id="@+id/nav_mostrarArtista"
+        android:name="com.example.practicafinalpdm.ui.principal.mostrarArtista"
+        android:label="Artista"
+        tools:layout="@layout/mostrar_artista_fragment"
+        />
+    <fragment
+        android:id="@+id/nav_mostrarTodosArtistas"
+        android:name="com.example.practicafinalpdm.ui.principal.mostrarTodosArtistas"
+        android:label="Artistas"
+        tools:layout="@layout/mostrar_todos_artistas_fragment"
+        />
+    <fragment
+        android:id="@+id/nav_mostrarTrabajosArtista"
+        android:name="com.example.practicafinalpdm.ui.principal.mostrarTrabajosArtista"
+        android:label="Trabajos"
+        tools:layout="@layout/mostrar_trabajos_artista_fragment"
+
+        />
+    <fragment
+        android:id="@+id/nav_mostrarTrabajo"
+        android:name="com.example.practicafinalpdm.ui.principal.mostrarTrabajo"
+        android:label="Trabajo"
+        tools:layout="@layout/mostrar_trabajo_fragment"
+        />
+    <fragment
+        android:id="@+id/nav_cambiarContra"
+        android:name="com.example.practicafinalpdm.ui.principal.cambiarContraFragment"
+        android:label="Cambiar Contraseña"
+        tools:layout="@layout/cambiar_contra_fragment"
+        />
+    <fragment
+        android:id="@+id/nav_cerrar"
+        android:name="com.example.practicafinalpdm.ui.principal.cerrarSesion"
+        android:label="CerrarSesion"
+        tools:layout="@layout/cerrar_sesion_fragment"
+        />
+    <fragment
+        android:id="@+id/nav_addExpo"
+        android:name="com.example.practicafinalpdm.ui.principal.addExpo"
+        android:label="Añadir Exposicion"
+        tools:layout="@layout/add_expo_fragment"
+        />
+
+</navigation>
